@@ -1,0 +1,21 @@
+@import 'src/ui/styles/core/mixins';
+
+.profile-chip {
+  position: fixed;
+  top: 12px;
+  left: 22px;
+
+  @include chip(var(--border-blue, #09b9ff), 12px) {
+    font-size: 18px;
+  };
+}
+
+.level-chip {
+  position: fixed;
+  top: 12px;
+  right: 22px;
+
+  @include chip(_, 12px) {
+    font-size: 18px
+  };
+}

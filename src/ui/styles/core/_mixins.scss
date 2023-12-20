@@ -1,0 +1,9 @@
+@mixin chip($bgColor, $borderRadius) {
+  padding: 4px 19px;
+  border: 2px solid var(--white, #fffeff);
+  border-radius: $borderRadius;
+  background: $bgColor;
+  color: var(--white, #fffeff);
+  text-transform: uppercase;
+  @content;
+}

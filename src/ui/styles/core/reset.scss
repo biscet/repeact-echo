@@ -1,0 +1,30 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Ramona;
+  font-weight: 700;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: 0;
+}

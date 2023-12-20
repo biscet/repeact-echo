@@ -1,0 +1,25 @@
+{
+  "appId": "38bbaf44-77a4-479b-8397-a98e39325912",
+  "asar": false,
+  "directories": { "output": "release/${version}" },
+  "files": ["dist-solidjs", "dist-electron", "!node_modules"],
+  "includeSubNodeModules": true,
+  "mac": {
+    "artifactName": "${productName}__${version}.${ext}",
+    "icon": "dist-solidjs/electron/icon_512x512.icns",
+    "type": "distribution",
+    "target": ["dmg"]
+  },
+  "compression": "maximum",
+  "win": {
+    "target": [{ "target": "nsis", "arch": ["x64"] }],
+    "artifactName": "${productName}__${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false
+  },
+  "beforePack": "electron/hooks/cleanFolderHook.js"
+}

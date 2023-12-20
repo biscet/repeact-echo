@@ -1,0 +1,121 @@
+@import 'src/ui/styles/core/tokens';
+
+.foo-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 105px;
+  align-items: flex-start;
+  justify-content: center;
+
+  @media (width >= $mobile-screen) {
+    height: 125px;
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 27px;
+    padding-left: 27px;
+    background: var(--white, #fffeff);
+    box-shadow: 0 5px 0 0 rgb(0 0 0 / 7%) inset;
+
+    @media (width >= $mobile-screen) {
+      width: 390px;
+      height: 105px;
+      border-radius: 12px;
+      box-shadow: 0 5px 0 0 rgb(0 0 0 / 7%) inset, 0 5px 0 0 rgb(34 60 80 / 33%);
+    }
+
+    .nav-button {
+      position: relative;
+      width: 59px;
+      height: 59px;
+      padding-top: 8px;
+      padding-bottom: 5px;
+      border-radius: 12px;
+      cursor: pointer;
+      user-select: none;
+
+      &__content {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__icon {
+        z-index: 3;
+        width: 30px;
+        height: 29px;
+      }
+
+      &__label {
+        z-index: 3;
+        color: var(--white, #fffeff);
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+
+      &::after {
+        position: absolute;
+        z-index: 1;
+        bottom: -8px;
+        left: -4px;
+        width: 65px;
+        height: 13px;
+        border-right: 1px solid var(--border-gray, #d9d8d9);
+        border-bottom: 5px solid var(--border-gray, #d9d8d9);
+        border-left: 1px solid var(--border-gray, #d9d8d9);
+        background: white;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        content: '';
+      }
+
+      &::before {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        width: 59px;
+        height: 15px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        content: '';
+      }
+
+      &:active {
+        padding-top: 6px;
+        padding-bottom: 2px;
+        transform: translateY(5px);
+
+        &::before {
+          border-bottom: none;
+        }
+      }
+
+      @each $name, $backgroundColor, $borderColor in $nav-buttons-colors {
+        &_#{$name} {
+          background: $backgroundColor;
+
+          &::before {
+            border-bottom: 5px solid $borderColor;
+            background: $backgroundColor;
+          }
+
+          &:active {
+            border-bottom: 5px solid $backgroundColor;
+          }
+        }
+      }
+    }
+  }
+}

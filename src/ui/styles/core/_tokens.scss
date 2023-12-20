@@ -1,0 +1,10 @@
+// Screens
+$mobile-screen: 550px;
+
+// Maps
+$nav-buttons-colors: (
+  'blue' var(--light-blue, #4cdafe) var(--border-blue, #09b9ff),
+  'pink' var(--light-pink, #fc8aff) var(--border-pink, #da57f0),
+  'purple' var(--light-purple, #c286ff) var(--border-purple, #a75cf4),
+  'yellow' var(--light-yellow, #ffdd17) var(--border-yellow, #ffb213)
+);
