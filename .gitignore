@@ -1,0 +1,8 @@
+node_modules
+dist-electron
+dist-solidjs
+release
+
+.DS_Store
+
+.stylelintcache
