@@ -1,0 +1,23 @@
+#modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+ align-items: center;
+ justify-content: center;
+  pointer-events: none;
+}
+
+.modal-shadow {
+  &__show {
+    pointer-events: all;
+  }
+
+  &__hidden {
+    pointer-events: all;
+  }
+}

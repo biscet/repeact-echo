@@ -2,25 +2,25 @@ import {
   BonusSVG, DailySVG, ThemesSVG, TrophySVG
 } from 'src/ui/images/svg';
 
-export const NAV_BUTTONS = [
+export const NAV_FOOBAR_BUTTONS = [
   {
     label: 'Bonus',
-    icon: <BonusSVG class="nav-button_icon" />,
+    icon: () => <BonusSVG class="nav-button_icon" />,
     buttonColor: 'blue'
   },
   {
     label: 'Daily',
-    icon: <DailySVG class="nav-button_icon" />,
+    icon: () => <DailySVG class="nav-button_icon" />,
     buttonColor: 'pink'
   },
   {
     label: 'Theme',
-    icon: <ThemesSVG class="nav-button_icon" />,
+    icon: () => <ThemesSVG class="nav-button_icon" />,
     buttonColor: 'purple'
   },
   {
     label: 'Trophy',
-    icon: <TrophySVG class="nav-button_icon" />,
+    icon: () => <TrophySVG class="nav-button_icon" />,
     buttonColor: 'yellow'
   }
 ];

@@ -4,6 +4,8 @@ import 'src/ui/styles/core/colors.scss';
 import 'src/ui/styles/core/reset.scss';
 import 'src/ui/styles/core/global.scss';
 
+import 'src/models/init';
+
 import { App } from 'src/pages/App';
 
 render(() => <App />, document.getElementById('app'));

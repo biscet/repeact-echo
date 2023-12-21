@@ -1,5 +1,5 @@
 import { useNavigate } from '@solidjs/router';
-import { PAGES_PATH } from 'src/constants/paths';
+import { PAGES_PATH } from 'src/constants';
 import { MainMenu } from 'src/pages/children';
 
 const { MAIN_MENU } = PAGES_PATH;
