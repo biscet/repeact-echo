@@ -7,7 +7,7 @@ export const profileDomain = createDomain('profileDomain');
 // ===================== ЮНИТЫ СОБЫТИЙ ===================== //
 export const setProfileNameFn = profileDomain.createEvent();
 
-// ===================== ЮНИТЫ ХРАНИЛИЦ ==================== //
+// ===================== ЮНИТЫ ХРАНИЛИЩ ==================== //
 export const $profileName = profileDomain.createStore(DEFAULT_PROFILE_NAME, { name: 'profileName' });
 export const $profileLevel = profileDomain.createStore(DEFAULT_PROFILE_LEVEL, { name: 'profileLevel' });
 

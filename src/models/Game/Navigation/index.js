@@ -9,7 +9,7 @@ export const unlockAllModesFn = navigationDomain.createEvent();
 export const setModeFn = navigationDomain.createEvent();
 export const lockAllModesFn = navigationDomain.createEvent();
 
-// ===================== ЮНИТЫ ХРАНИЛИЦ ==================== //
+// ===================== ЮНИТЫ ХРАНИЛИЩ ==================== //
 export const $gameModes = navigationDomain.createStore(GAME_MODES, { name: 'gameModes' });
 
 persist({ store: $gameModes });

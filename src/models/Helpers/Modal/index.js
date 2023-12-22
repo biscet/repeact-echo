@@ -6,5 +6,5 @@ export const modalDomain = createDomain('modalDomain');
 export const openModalFn = modalDomain.createEvent();
 export const closeModalFn = modalDomain.createEvent();
 
-// ===================== ЮНИТЫ ХРАНИЛИЦ ==================== //
+// ===================== ЮНИТЫ ХРАНИЛИЩ ==================== //
 export const $modal = modalDomain.createStore({});
