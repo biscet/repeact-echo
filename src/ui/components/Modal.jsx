@@ -4,7 +4,7 @@ import { useUnit } from 'effector-solid';
 import { Motion, Presence } from '@motionone/solid';
 import { get, isEmpty } from 'src/lib/lodash';
 import { $modal } from 'src/models/Helpers/Modal';
-import { MODAL_FIELDS, ANIMATION_FIELDS, MODAL_SHOW_FIELDS } from 'src/constants';
+import { MODAL_FIELDS, ANIMATION_FIELDS, MODAL_SHOW_ANIMATION } from 'src/constants';
 
 import 'src/ui/styles/components/modal.scss';
 
@@ -38,9 +38,9 @@ export const Modal = () => {
       <Presence>
         <Show when={!isEmpty(content())}>
           <Motion.div
-            animate={MODAL_SHOW_FIELDS[ANIMATE]}
-            transition={MODAL_SHOW_FIELDS[TRANSITION]}
-            exit={MODAL_SHOW_FIELDS[EXIT]}
+            animate={MODAL_SHOW_ANIMATION[ANIMATE]}
+            transition={MODAL_SHOW_ANIMATION[TRANSITION]}
+            exit={MODAL_SHOW_ANIMATION[EXIT]}
           >
             {ContentElement}
           </Motion.div>

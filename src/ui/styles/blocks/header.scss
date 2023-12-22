@@ -1,11 +1,15 @@
 @import 'src/ui/styles/core/mixins';
 
 .header {
-  display: flex;
   height: 86px;
-  align-items: center;
-  justify-content: space-between;
   padding: 12px 22px;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__profile-chip {
     @include chip(var(--border-blue, #09b9ff), 12px) {

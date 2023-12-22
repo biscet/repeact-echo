@@ -1,6 +1,6 @@
 import { Router, Route, Routes } from '@solidjs/router';
 import { Index } from 'solid-js';
-import { FooBar, Profile } from 'src/ui/blocks';
+import { FooBar, Header } from 'src/ui/blocks';
 import {
   routes, Redirect, Modal, Loader
 } from 'src/ui/components';
@@ -8,7 +8,7 @@ import {
 export const App = () => {
   return (
     <Router>
-      <Profile />
+      <Header />
 
       <Routes>
         <Index each={routes}>

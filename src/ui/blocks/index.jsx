@@ -1,2 +1,2 @@
-export { Profile } from './Profile';
+export { Header } from './Header';
 export { FooBar } from './FooBar';
