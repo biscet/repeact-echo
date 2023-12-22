@@ -1,5 +1,7 @@
 export const DEFAULT_PROFILE_NAME = 'Player';
 
+export const PROFILE_NAME_FIELD = 'name';
+
 export const PROFILE_LEVEL_FIELDS = {
   EXP: 'exp',
   LEVEL: 'level',

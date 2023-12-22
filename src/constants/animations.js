@@ -11,11 +11,11 @@ export const MODAL_SHOW_ANIMATION = {
 };
 
 export const FOO_SHOW_ANIMATION = {
-  [ANIMATION_FIELDS.ANIMATE]: { y: ['115%', 0] },
+  [ANIMATION_FIELDS.ANIMATE]: { y: ['175%', 0] },
   [ANIMATION_FIELDS.TRANSITION]: { duration: 0.6 }
 };
 
 export const HEADER_SHOW_ANIMATION = {
-  [ANIMATION_FIELDS.ANIMATE]: { y: ['-115%', 0] },
+  [ANIMATION_FIELDS.ANIMATE]: { y: ['-175%', 0] },
   [ANIMATION_FIELDS.TRANSITION]: { duration: 0.6 }
 };
