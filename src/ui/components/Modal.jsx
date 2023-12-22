@@ -15,7 +15,7 @@ const portalMount = document.getElementById('modal');
 
 const portalRef = (content) => (el) => {
   const className = ['modal-shadow'];
-  className.push(!isEmpty(content) ? 'modal-shadow__show' : 'modal-shadow__hidden');
+  className.push(!isEmpty(content) ? 'modal-shadow_show' : 'modal-shadow_hidden');
   el.setAttribute('class', className.join(' '));
 };
 
@@ -27,7 +27,7 @@ export const Modal = () => {
 
   const ContentElement = () => {
     if (!isEmpty(content())) {
-      return createComponent(content(), props);
+      return createComponent(content(), props());
     }
 
     return null;

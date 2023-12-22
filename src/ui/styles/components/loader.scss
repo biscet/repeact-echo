@@ -1,0 +1,50 @@
+@import 'src/ui/styles/core/mixins';
+@import 'src/ui/styles/core/tokens';
+
+.loader {
+  &_show {
+    @include portal-blocks(3) {
+      background: $background-gradient;
+    };  
+  }
+
+  &_hidden {
+    pointer-events: none;
+  }
+}
+
+#loader {
+  #svg-loader {
+    width: 100px;
+    height: 100px;
+  }
+
+  .loader-shadow {
+    display: flex;
+    height: 100vh;
+    height: 100svh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @each $id, $animation in $squares-loader-ids {
+    ##{$id} {
+      animation: $animation;
+      fill: var(--border-yellow, #ffb213);
+
+      @if $id == 'b0' {
+        transform-origin: 250px 250px;
+      }
+    }
+  }
+
+  @each $name, $percent-animation in $squares-loader-keyframes {
+    @keyframes #{$name} {
+      @each $percent, $transform in $percent-animation {
+        #{$percent} {
+          transform: $transform;
+        }
+      }
+    }
+  }
+}
