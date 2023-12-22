@@ -1,20 +1,20 @@
-import 'src/ui/styles/blocks/profile.scss';
+import 'src/ui/styles/blocks/header.scss';
 
 export const Profile = () => {
   const levelBackground = 'linear-gradient(to right, var(--border-blue, #09b9ff) 30%, transparent 0%)';
 
   return (
-    <>
-      <div class="profile-chip">
+    <header class='header'>
+      <div class="header__profile-chip">
         biscet
       </div>
 
       <div
-        class="level-chip"
+        class="header__level-chip"
         style={{ background: levelBackground }}
       >
         LEVEL 1
       </div>
-    </>
+    </header>
   );
 };

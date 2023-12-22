@@ -22,11 +22,10 @@
   }
 
   .loader-shadow {
-    display: flex;
+    @include flex-centered;
+
     height: 100vh;
     height: 100svh;
-    align-items: center;
-    justify-content: center;
   }
 
   @each $id, $animation in $squares-loader-ids {

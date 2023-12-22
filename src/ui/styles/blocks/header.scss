@@ -1,0 +1,21 @@
+@import 'src/ui/styles/core/mixins';
+
+.header {
+  display: flex;
+  height: 86px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 22px;
+
+  &__profile-chip {
+    @include chip(var(--border-blue, #09b9ff), 12px) {
+      font-size: 18px;
+    };
+  }
+  
+  &__level-chip {
+    @include chip(_, 12px) {
+      font-size: 18px
+    };
+  }
+}

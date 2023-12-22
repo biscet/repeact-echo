@@ -1613,13 +1613,6 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.6.0.tgz#3c7c9c46e678feefe7a2e5bb609d3dbd665ffb3f"
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
-"@solid-primitives/destructure@^0.1.14":
-  version "0.1.14"
-  resolved "https://registry.yarnpkg.com/@solid-primitives/destructure/-/destructure-0.1.14.tgz#2c05b8c3c80de7bf4daddb509a9d33747a173976"
-  integrity sha512-zZh4ndBerokw+MKqjkp00PPnpZs9nfferQxkBlr3yvNTu4OoxmnRJciYNC1tYsGKRrFGJoHf31rgVedTLfXssA==
-  dependencies:
-    "@solid-primitives/utils" "^6.2.1"
-
 "@solid-primitives/props@^3.1.1":
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/@solid-primitives/props/-/props-3.1.8.tgz#2317119c9ed5d3fa1a9135e8b3a7d84ade666774"
@@ -2856,6 +2849,11 @@ effector-solid@^0.22.7:
   version "0.22.7"
   resolved "https://registry.yarnpkg.com/effector-solid/-/effector-solid-0.22.7.tgz#eefde702dd4fa242eed9b1af369bc98defc05fad"
   integrity sha512-6+nb7DhyDlnbdIiFElpzWAxjIscBRqUr4ehBMiIoTN7Xpw5DWn+oGYoWo/ZPtquNOC9VoJFIEWaaVWJ8Z0ExoQ==
+
+effector-storage@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/effector-storage/-/effector-storage-7.0.0.tgz#e4326d66a39ef4c67bdc7b512eb294bc0f70a123"
+  integrity sha512-iTwpZotNaEesliP/3jSE5eXGajBSci0Q7oCaTfgenNAwnZBrudwwifTxKU9+eI08QRh78AyS+Z6UfHX3aD+zOg==
 
 effector@^22.8.6:
   version "22.8.6"

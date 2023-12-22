@@ -8,17 +8,35 @@
   @content;
 }
 
+@mixin flex-centered($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin portal-blocks($index) {
+  @include flex-centered;
+
   position: fixed;
   z-index: $index;
   top: 0;
   left: 0;
-  display: flex;
   width: 100vw;
   height: 100vh;
   height: 100svh;
-  align-items: center;
-  justify-content: center;
   pointer-events: none;
   @content;
+}
+
+@mixin hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+}
+
+@mixin active {
+  &:not([disabled]):active {
+    @content;
+  }
 }
