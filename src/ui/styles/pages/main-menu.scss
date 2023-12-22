@@ -79,10 +79,12 @@ $lock-icon-size: 36px;
 
   @keyframes menu-loaded {
     0% {
+      opacity: 0.25;
       transform: scale(0.75);
     }
 
     85% {
+      opacity: 1;
       transform: scale(1.05);
     }
 
