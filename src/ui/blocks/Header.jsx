@@ -1,13 +1,27 @@
 import { Motion, Presence } from '@motionone/solid';
+import { useUnit } from 'effector-solid';
 import { Show } from 'solid-js';
-import { ANIMATION_FIELDS, HEADER_SHOW_ANIMATION } from 'src/constants';
+import {
+  ANIMATION_FIELDS, HEADER_SHOW_ANIMATION, PROFILE_LEVEL_FIELDS
+} from 'src/constants';
+import { $profileLevel, $profileName } from 'src/models/Game/Profile';
 
 import 'src/ui/styles/blocks/header.scss';
 
 const { ANIMATE, TRANSITION } = ANIMATION_FIELDS;
+const { LEVEL, PERCENT_FOR_LEVEL } = PROFILE_LEVEL_FIELDS;
+
+const levelBackground = (percent) => ({
+  background: (
+    `linear-gradient(to right, var(--border-blue, #09b9ff) ${percent}%, transparent 0%)`
+  )
+});
 
 export const Header = () => {
-  const levelBackground = 'linear-gradient(to right, var(--border-blue, #09b9ff) 30%, transparent 0%)';
+  const { name, levelInfo } = useUnit({
+    name: $profileName,
+    levelInfo: $profileLevel
+  });
 
   return (
     <header class='header'>
@@ -18,15 +32,13 @@ export const Header = () => {
             animate={HEADER_SHOW_ANIMATION[ANIMATE]}
             transition={HEADER_SHOW_ANIMATION[TRANSITION]}
           >
-            <div class="header__profile-chip">
-              biscet
-            </div>
+            <div class="header__profile-chip">{name()}</div>
 
             <div
               class="header__level-chip"
-              style={{ background: levelBackground }}
+              style={levelBackground(levelInfo()[PERCENT_FOR_LEVEL])}
             >
-              LEVEL 1
+              LEVEL {levelInfo()[LEVEL]}
             </div>
           </Motion.div>
         </Show>

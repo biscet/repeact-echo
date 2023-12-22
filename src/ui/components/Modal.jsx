@@ -23,11 +23,10 @@ export const Modal = () => {
   const contentModal = useUnit($modal);
 
   const content = () => get(contentModal(), CHILDREN, false);
-  const props = () => get(contentModal(), PROPS, {});
 
   const ContentElement = () => {
     if (!isEmpty(content())) {
-      return createComponent(content(), props());
+      return createComponent(content(), get(contentModal(), PROPS, {}));
     }
 
     return null;

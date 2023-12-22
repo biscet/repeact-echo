@@ -2845,6 +2845,11 @@ dotenv@^9.0.2:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-9.0.2.tgz#dacc20160935a37dea6364aa1bef819fb9b6ab05"
   integrity sha512-I9OvvrHp4pIARv4+x9iuewrWycX6CcZtoAu1XrzPxc5UygMJXJZYmBsynku8IkrJwgypE5DGNjDPmPRhDCptUg==
 
+effector-forms@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/effector-forms/-/effector-forms-1.3.1.tgz#73a4217ebe19517f497c3f74fa8beb2d5cfaddde"
+  integrity sha512-7sGciIWmp5eGEh9kDiewGBLGvArh9+5nOi64Lrw1BNV8JIi4ssMDXRgGpCZt/e/MdqvPIixJMc0cmXG9IbgAbA==
+
 effector-solid@^0.22.7:
   version "0.22.7"
   resolved "https://registry.yarnpkg.com/effector-solid/-/effector-solid-0.22.7.tgz#eefde702dd4fa242eed9b1af369bc98defc05fad"
