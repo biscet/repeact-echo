@@ -1,6 +1,6 @@
 import { createDomain } from 'effector';
 import { persist } from 'effector-storage/local';
-import { createForm } from 'effector-forms';
+import { createForm } from 'effector-form-solid';
 import { DEFAULT_PROFILE_LEVEL, DEFAULT_PROFILE_NAME, PROFILE_NAME_FIELD } from 'src/constants';
 import { rules } from 'src/lib/rules';
 

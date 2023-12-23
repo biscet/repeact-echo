@@ -6,8 +6,14 @@
   "author": "Egor Prokhorov",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/biscet/repeact-echo"
   },
+  "keywords": [
+    "effector",
+    "repeat",
+    "echo",
+    "solidjs"
+  ],
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -31,9 +37,8 @@
     "autoprefixer": "^10.4.15",
     "babel-plugin-transform-jsx": "^2.0.0",
     "babel-preset-solid": "^1.7.7",
-    "effector": "^22.8.6",
-    "effector-forms": "1.3.1",
-    "effector-react": "22.5.2",
+    "effector": "22.8.6",
+    "effector-form-solid": "1.0.1",
     "effector-solid": "^0.22.7",
     "effector-storage": "^7.0.0",
     "electron": "^22.0.0",
@@ -64,8 +69,5 @@
     "vite-plugin-image-optimizer": "^1.1.7",
     "vite-plugin-solid": "^2.5.0",
     "vite-plugin-stylelint": "^5.1.1"
-  },
-  "dependencies": {
-    "react": "17.0.2"
   }
 }
